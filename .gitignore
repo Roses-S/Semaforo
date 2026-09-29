@@ -1,0 +1,25 @@
+# --- Entorno virtual de Python (cada quien crea el suyo, no se sube) ---
+.venv/
+venv/
+
+# --- Archivos que Python genera solo al ejecutar ---
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# --- Secretos: contraseñas de la base de datos, claves, etc. ---
+# NUNCA se suben a GitHub. Se sube .env.example como plantilla.
+.env
+
+# --- Pesos del modelo YOLO (se descargan solos, pesan varios MB) ---
+*.pt
+
+# --- Registros y capturas generados al correr el sistema ---
+logs/
+capturas/
+
+# --- Archivos del editor / sistema operativo ---
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

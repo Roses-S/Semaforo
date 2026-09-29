@@ -1,0 +1,20 @@
+# Dependencias de Python del proyecto.
+# Se instalan con:  pip install -r requirements.txt
+# Se irán descomentando conforme avancemos de fase, para que sepas
+# exactamente para qué entra cada librería.
+
+# --- Fase 1: pruebas automáticas ---
+pytest
+
+# --- Fase 2: servidor y base de datos ---
+# fastapi            # framework para crear la API (el "servidor")
+# uvicorn[standard]  # el programa que ejecuta la app FastAPI
+# sqlmodel           # ORM: tablas de la BD como clases de Python
+# psycopg[binary]    # driver: el "cable" entre Python y PostgreSQL
+# alembic            # migraciones: control de versiones del esquema de la BD
+# python-dotenv      # lee el archivo .env
+
+# --- Fase 4: detección con cámara ---
+# ultralytics        # YOLO preentrenado (detecta personas)
+# opencv-python      # leer video de la webcam / ESP32-CAM y dibujar
+# requests           # el detector le avisa al backend por HTTP
